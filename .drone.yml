@@ -1,0 +1,17 @@
+kind: pipeline
+type: exec
+name: default
+
+platform:
+  os: linux
+  arch: amd64
+
+steps:
+- name: greeting
+  commands:
+  - lsblk
+  - sudo apt install git
+  - df -h
+  - free -m
+  - du -sh /home
+  - pwd
