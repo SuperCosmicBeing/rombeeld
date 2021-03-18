@@ -8,10 +8,10 @@ clone:
 steps:
  - name: run
    image: fr3akyphantom/droid-builder:latest
-  commands:
-  - lsblk
-  - sudo apt install git
-  - df -h
-  - free -m
-  - du -sh /home
-  - pwd
+   commands:
+   - lsblk
+   - sudo apt install git
+   - df -h
+   - free -m
+   - du -sh /home
+   - pwd
