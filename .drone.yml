@@ -1,13 +1,13 @@
-kind: pipeline
-type: exec
-name: default
 
-platform:
-  os: linux
-  arch: amd64
+kind: pipeline
+name: Build kernel
+
+clone:
+  depth: 1
 
 steps:
-- name: greeting
+ - name: run
+   image: fr3akyphantom/droid-builder:latest
   commands:
   - lsblk
   - sudo apt install git
